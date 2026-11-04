@@ -8,7 +8,7 @@ echo ============================================================
 echo.
 echo [1/3] Setting up Node environment...
 set "PATH=C:\Users\BENAZIR\.gemini\antigravity\scratch\nodejs\node-v20.18.0-win-x64;%PATH%"
-cd /d "C:\graphic ui ux portfolio"
+cd /d "%~dp0"
 
 echo [2/3] Opening your portfolio in your default browser...
 start "" "http://localhost:3000"

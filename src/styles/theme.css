@@ -563,6 +563,31 @@ img {
   background: radial-gradient(circle at 85% 15%, rgba(199, 255, 61, 0.08) 0%, transparent 60%);
 }
 
+.sculpture-card-inner.hero-sculpture-photo-inner {
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  position: relative;
+  background: #121217;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-sculpture-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  border-radius: calc(var(--radius-md) - 2px);
+  transition: transform var(--transition-normal);
+}
+
+.sculpture-card:hover .hero-sculpture-photo-img {
+  transform: scale(1.03);
+}
+
 .sculpture-glow-orb {
   position: absolute;
   width: 120px;

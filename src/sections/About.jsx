@@ -17,7 +17,7 @@ export default function About() {
           {/* Left Column: Visual Designer Badge / Profile Card */}
           <div className="about-visual-column">
             <div className="about-portrait-card">
-              <div className="about-inner-graphic">
+              <div className="about-inner-graphic" style={{ marginBottom: 0 }}>
                 <div className="about-portrait-wrap">
                   <img
                     src="./images/projects/profile image/WhatsApp Image 2026-01-07 at 22.00.21.jpeg"
@@ -30,15 +30,7 @@ export default function About() {
                   <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.1rem', fontWeight: 700, color: '#F5F5F5' }}>
                     {PERSONAL_INFO.name.toUpperCase()}
                   </div>
-                  <div className="about-coord-tag" style={{ marginTop: '4px' }}>
-                    NEW DELHI · 28.6139° N, 77.2090° E
-                  </div>
                 </div>
-              </div>
-
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid rgba(255,255,255,0.06)', paddingTop: '12px' }}>
-                <span className="badge badge-lime">AVAILABLE FOR Q1 / Q2</span>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#888899' }}>FOLIO 2026</span>
               </div>
             </div>
           </div>

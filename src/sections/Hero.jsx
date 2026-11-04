@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ArrowUpRight, Sparkles, Layers } from 'lucide-react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/projects';
 
 export default function Hero() {
@@ -64,30 +64,13 @@ export default function Hero() {
               <div className="sculpture-glow-orb" />
 
               <div className="sculpture-card">
-                <div className="sculpture-card-inner">
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: 'var(--accent-lime)' }}>
-                      01 / CONCEPT
-                    </span>
-                    <Sparkles size={16} color="var(--accent-lime)" />
-                  </div>
-
-                  <div style={{ textAlign: 'center', margin: '1rem 0' }}>
-                    <div style={{ width: '64px', height: '64px', borderRadius: '50%', border: '2px solid var(--accent-lime)', margin: '0 auto 12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <Layers size={28} color="#C7FF3D" />
-                    </div>
-                    <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', fontWeight: 700, color: '#F5F5F5' }}>
-                      Visual Systems
-                    </div>
-                    <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.65rem', color: '#A5A5AD', marginTop: '4px' }}>
-                      BRANDING · UI/UX · SPATIAL
-                    </div>
-                  </div>
-
-                  <div style={{ display: 'flex', justifyContent: 'space-between', borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '8px' }}>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: '#8E8E99' }}>EST. 2026</span>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6rem', color: 'var(--accent-lime)' }}>ORIGINAL CRAFT</span>
-                  </div>
+                <div className="sculpture-card-inner hero-sculpture-photo-inner">
+                  <img
+                    src="./images/projects/profile image/WhatsApp Image 2026-01-07 at 22.00.21.jpeg"
+                    alt={`${PERSONAL_INFO.name} Profile`}
+                    className="hero-sculpture-photo-img"
+                    loading="eager"
+                  />
                 </div>
               </div>
             </div>
